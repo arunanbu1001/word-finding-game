@@ -3,27 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport"    content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="suffele.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
 <body>
-    <div class="hangman">
-        <div class="guess"></div>
-        <form class="guessForm">
-        <input type="text" class="guessLetter" maxlength="1"  placeholder="Enter a letter . . . &#x23ce;"/> <button type="submit" class="guessButton">Guess</button>
-        </form>  
+    <div class="cir">
+        <div class="syma  sym" id="niuk">N</div>
+        <div class="symb sym" id="niuk">I</div>
+        <div class="symc sym" id="niuk">G</div>
+        <div class="symd sym" id="niuk">K</div>
+     
+        <div id="sf"><i class="fa-solid fa-shuffle" onclick="load()"></i></div>
+    </div>
+    <div>
+        <div class="con"> <div class="num"></div><input type="submit"></div>
+    </div>
+       
+    <p><i>remaining guessing</i> <span class="banance">-</span></p>
         
-        <div class="wrong">
-          <div class="wrongLetters"></div>
-        </div>
-        <div class="message">
-          <h1 class="title"></h1>
-          <p class="text"></p>
-          <button class="restart button">Play Again?</button>
-          
-        </div>
-      </div>
-      <script src="main.js"></script>
+    <script src="main.js"></script>
 </body>
+
 </html>
